@@ -1,0 +1,47 @@
+Title: * Schmitt Trigger circuit no. 2
+datum = 0     cktNodeTotal = 6
+节点6, 编号为：6, 所连器件数为：4
+        编号：1    类型：VSource 连接端口：0    名称：vcc
+        value: 10
+        编号：5    类型：Resistor 连接端口：1    名称：r2
+        value: 5000
+        编号：2    类型：Resistor 连接端口：0    名称：rc2
+        value: 1000
+        编号：1    类型：Resistor 连接端口：0    名称：rc1
+        value: 1500
+节点4, 编号为：5, 所连器件数为：3
+        编号：7    类型：Resistor 连接端口：0    名称：r4
+        value: 1e+06
+        编号：3    类型：Resistor 连接端口：1    名称：r1
+        value: 10000
+        编号：2    类型：BJT 连接端口：1    名称：q2
+节点3, 编号为：4, 所连器件数为：2
+        编号：2    类型：Resistor 连接端口：1    名称：rc2
+        value: 1000
+        编号：2    类型：BJT 连接端口：0    名称：q2
+节点1, 编号为：3, 所连器件数为：3
+        编号：4    类型：Resistor 连接端口：0    名称：re
+        value: 100
+        编号：2    类型：BJT 连接端口：2    名称：q2
+        编号：1    类型：BJT 连接端口：2    名称：q1
+节点5, 编号为：2, 所连器件数为：3
+        编号：6    类型：Resistor 连接端口：0    名称：r3
+        value: 1250
+        编号：5    类型：Resistor 连接端口：0    名称：r2
+        value: 5000
+        编号：1    类型：BJT 连接端口：1    名称：q1
+节点2, 编号为：1, 所连器件数为：3
+        编号：3    类型：Resistor 连接端口：0    名称：r1
+        value: 10000
+        编号：1    类型：Resistor 连接端口：1    名称：rc1
+        value: 1500
+        编号：1    类型：BJT 连接端口：0    名称：q1
+节点0, 编号为：0, 所连器件数为：4
+        编号：1    类型：VSource 连接端口：1    名称：vcc
+        value: 10
+        编号：7    类型：Resistor 连接端口：1    名称：r4
+        value: 1e+06
+        编号：6    类型：Resistor 连接端口：1    名称：r3
+        value: 1250
+        编号：4    类型：Resistor 连接端口：1    名称：re
+        value: 100

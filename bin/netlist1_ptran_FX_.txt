@@ -1,0 +1,8 @@
+F_1 = + (X_1 - X_4) / r3 - (X_6 - X_1) / rc1 + q1_Ic + C / h * (X_1 - X'_1)
+F_5 = + X_vin - q1_Ic - q1_Ie + C / h * (X_5 - X'_5)
+F_2 = + (X_2) / re + q2_Ie + q1_Ie + C / h * (X_2 - X'_2)
+F_3 = - (X_6 - X_3) / rc2 + q2_Ic + C / h * (X_3 - X'_3)
+F_4 = - (X_1 - X_4) / r3 - q2_Ic - q2_Ie + C / h * (X_4 - X'_4)
+F_6 = + X_vcc + (X_6 - X_3) / rc2 + (X_6 - X_1) / rc1
+F_vcc = + X_6 - vcc - (X_vcc - X'_vcc) * L / h
+F_vin = + X_5 - vin - (X_vin - X'_vin) * L / h
