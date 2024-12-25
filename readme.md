@@ -48,7 +48,7 @@ Linux系统上，使用`OpenMPI + GCC`也可以构建，但需要对项目中的
     cd MiniSPICE
     docker build . --file Dockerfile --tag minispice
     ------waitting------
-    docker run --mount type=bind,source="%CD%",target=/root/minispice -it minispice
+    docker run --shm-size=4gb --mount type=bind,source="%CD%",target=/root/minispice -it minispice
     cd /root/minispice/3rd_lib
     bash install.sh
     ------waitting------
