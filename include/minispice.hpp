@@ -37,7 +37,7 @@ int solve(std::unique_ptr<SMPMatrix>&, std::unique_ptr<Netlist>&, std::unique_pt
 int dojob(std::unique_ptr<SMPMatrix>&, std::unique_ptr<Netlist>&, std::unique_ptr<Analysis>&, std::string, int);
 
 /* plot.cpp */
-int plot(std::unique_ptr<Analysis>& analysis);
+int plot(std::unique_ptr<Analysis>&, std::unique_ptr<Netlist>&);
 
 
 #endif

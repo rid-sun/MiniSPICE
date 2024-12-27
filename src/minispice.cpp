@@ -140,11 +140,14 @@ MPI_ENV_0_PID_BEGIN(myid)
     }
 
     // 4. plot
-    error = plot(analysis);
+    if (analysis->getOpType() != AnalysisType::DC_NR && analysis->getOpType() != AnalysisType::no_An) {
+        
+        error = plot(analysis, netlist);
 
-    if (error == MINISPICEERROR) {
-        std::cerr << "Stage4: Visualization failed!" << std::endl;
-        MPI_Abort(MPI_COMM_WORLD, 1);
+        if (error == MINISPICEERROR) {
+            std::cerr << "Stage3: Visualization failed!" << std::endl;
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
     }
 
     std::cout << "=====================Simulation Final=====================" << std::endl;

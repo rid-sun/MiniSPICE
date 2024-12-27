@@ -3,7 +3,8 @@ LABEL maintainer="Jiatai Sun <jiatai.sun@student.cup.edu.cn>"
 
 # Installs Git.
 RUN apt-get update && \
-    apt-get install -y git
+    apt-get install -y git && \
+    apt-get install -y python3-pip
 
 WORKDIR /root
 
@@ -23,3 +24,5 @@ RUN cd METIS && \
 RUN cd ParMETIS && \
     make config cc=mpiicx && \
     make install -j8
+
+RUN pip3 install numpy matplotlib

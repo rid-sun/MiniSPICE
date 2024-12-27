@@ -270,6 +270,7 @@ MPI_ENV_0_PID_BEGIN(myid)
         std::cout << "X[" << nodeHead.getID2Name(i + 1) << "]=" << matrix->oldoldRHS[i] << " ";
     }
     std::cout << std::endl;
+    analysis->addPtranResult(matrix->oldoldRHS, matrix->n, ptranTime);
 MPI_ENV_0_PID_END
 
     while (true) {
@@ -324,6 +325,7 @@ MPI_ENV_0_PID_END
             //     std::cout << "X[" << nodeHead.getID2Name(i + 1) << "]=" << matrix->oldoldRHS[i] << " ";
             // }
             // std::cout << std::endl;
+            analysis->addPtranResult(matrix->oldoldRHS, matrix->n, ptranTime);
 
             if (ptConv(matrix, analysis)) {
                 ptran_conv = ptran_nr_num;

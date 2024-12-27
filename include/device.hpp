@@ -716,6 +716,10 @@ public:
 
     std::string getID2Name(int id) {
         return id2Name[id];
+    }
+
+    std::unordered_map<int, std::string>& getID2Name_() {
+        return id2Name;
     } 
 
     void setName2ID(char *name, int id) {
@@ -807,6 +811,8 @@ private:
     const double min_ptran_step_size = 1e-9;
     const double max_ptran_step_size = 1e20;
     double init_ptran_step_size = 1.1;
+    std::vector<std::vector<double>> ptran_results;
+    std::vector<double> ptran_timepoints;
 
     // NR
     const double rtol_nr = 1e-4;
@@ -901,6 +907,19 @@ public:
 
     double getPtranEndTime() {
         return ptran_end_time;
+    }
+
+    void addPtranResult(double *x, int n, double t) {
+        ptran_timepoints.push_back(t);
+        ptran_results.emplace_back(x, x + n);
+    }
+
+    std::vector<std::vector<double>>& getPtranResults() {
+        return ptran_results;
+    }
+
+    std::vector<double>& getPtranTimepoints() {
+        return ptran_timepoints;
     }
 
     double getMinPtranStepSize() {
