@@ -28,14 +28,17 @@ def visualize(results, timepoints, labels):
 
     for idx, color in enumerate(colors):
         ax.plot(x_axis_data, y_axis_data[:, idx], label=f"x_{labels[idx]}", color=color)
+        # ax.plot(np.arange(len(x_axis_data)), y_axis_data[:, idx], label=f"x_{labels[idx]}", color=color)
 
     ax.legend(
-        loc="upper center",
-        bbox_to_anchor=(0.5, 1.15),
-        ncol=math.floor(math.sqrt(len(y_axis_data))),
+        loc="lower center",
+        bbox_to_anchor=(0.5, 1.),
+        ncol=math.floor(math.sqrt(len(labels))),
         handleheight=1.5,
         columnspacing=1.0,
         fontsize='medium'
     )
+  
+    plt.tight_layout()
     
     plt.savefig('ptran.png')
