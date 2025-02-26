@@ -5,6 +5,7 @@
 > * https://www.sfu.ca/~ljilja/cnl/projects/Homotopy/  
 > * https://ngspice.sourceforge.io/
 
+[![Watch the video](pic/demo.png)](https://www.bilibili.com/video/BV1thP5eXEEn/)
 ---------------------------------------------------------------
 ## 重要特性
 - 整体架构为**批处理模式**，通过网表语句来指明功能分析。
