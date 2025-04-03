@@ -1,4 +1,6 @@
 # MiniSPICE
+简体中文/[English](https://github.com/rid-sun/MiniSPICE/readme_en.md)
+
 该项目脱胎于[`parser`](https://github.com/rid-sun/practices/tree/main/parser)，使用C++特性（继承、封装、抽象、多态）重新改写整体架构，给出了一个<u>**简单理解SPICE开发流程**</u>很好的demo。😊😊😊
 
 > 主要参考自：
