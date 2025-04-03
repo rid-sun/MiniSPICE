@@ -1,5 +1,5 @@
 # MiniSPICE
-[简体中文](https://github.com/rid-sun/MiniSPICE/readme.md)/English
+[简体中文](./readme.md)/English
 
 This project evolved from a parser and was rewritten using C++ features (inheritance, encapsulation, abstraction, and polymorphism) to restructure the overall architecture. It provides an excellent demo for <u>**easily understanding the SPICE development process**</u>. 😊😊😊
 
